@@ -7,26 +7,31 @@
 <style type="text/css">
   body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    line-height: 3em;
+    line-height: 2em;
     background-color: darkturquoise;
   }
   h1 {
     font-size: 3em;
   }
   td {
-    padding: 5px 30px 5px 0;
+    padding: 2px 10px 2px 0;
+    font-size: x-large;
   }
+  input {
+    font-size: x-large;
+  }
+
   /* Add styles here */
   main {
     background-color: white;
     padding: 50px;
-    width: 800px;
+    width: 1200px;
     margin: 100px auto;
     box-shadow: 0 40px 80px rgba(0,0,0,0.2);
   }
   section {
     display: inline-block;
-    width: 750px;
+    width: 1000px;
   }
 </style>
 
@@ -43,30 +48,48 @@
     <tr>
       <td>Epoch to Diameter Timestamp convertor:<td/>
       <td><form action="/customClock">
-              <label for="epochValue">EpochTime:</label>
-              <input type="number" id="epochValue" name="epochValue" min="0">
-              <input type="submit">
-            </form>
-            <td/>
+              <table>
+                  <tr><td>
+                    <label for="epochValue">Epoch Time:</label>
+                  </td></tr>
+                  <tr><td>
+                     <input type="number" id="epochValue" name="epochValue" min="0">
+                     <input type="submit">
+                  </td></tr>
+              </table>
+      </form>
+      <td/>
     </tr>
     <tr>
       <td>Date to Diameter Timestamp convertor:<td/>
       <td><form action="/customClock">
-                        <label for="humanDateTime">Datetime:</label>
-                        <input type="datetime-local" id="humanDateTime" name="humanDateTime">
-                        <input type="submit">
-                      </form>
-                      <td/>
+                        <table>
+                            <tr><td>
+                                <label for="humanDateTime">Datetime:</label>
+                            </td></tr>
+                            <tr><td>
+                                <input type="text" id="humanDateTime" name="humanDateTime" placeholder="yyyy-MM-ddTHH:mm:ss">
+                                <input type="submit">
+                            </td></tr>
+                        </table>
+      </form>
+      <td/>
     </tr>
     <tr>
           <td>Diameter Timestamp to Epoch and Date convertor:<td/>
           <td><form action="/customClock">
-                            <label for="diamTimeStamp">Diameter Timestamp:</label>
-                            <input type="number" id="diamTimeStamp" name="diamTimeStamp" min="2208988800">
-                            <input type="submit">
-                          </form>
-                          <td/>
-        </tr>
+                        <table>
+                            <tr><td>
+                                <label for="diamTimeStamp">Diameter Timestamp:</label>
+                            </td></tr>
+                            <tr><td>
+                                 <input type="number" id="diamTimeStamp" name="diamTimeStamp" min="2208988800">
+                                 <input type="submit">
+                            </td></tr>
+                        </table>
+          </form>
+          <td/>
+    </tr>
   </table>
   </section>
 
