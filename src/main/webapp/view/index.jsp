@@ -18,15 +18,16 @@
     font-size: x-large;
   }
   input {
-    font-size: x-large;
+    font-size:
+    large;
   }
 
   /* Add styles here */
   main {
     background-color: white;
-    padding: 50px;
-    width: 1200px;
-    margin: 100px auto;
+    padding: 40px;
+    width: 1000px;
+    margin: 80px auto;
     box-shadow: 0 40px 80px rgba(0,0,0,0.2);
   }
   section {
@@ -68,7 +69,7 @@
                                 <label for="humanDateTime">Datetime:</label>
                             </td></tr>
                             <tr><td>
-                                <input type="text" id="humanDateTime" name="humanDateTime" placeholder="yyyy-MM-ddTHH:mm:ss">
+                                <input type="datetime-local" id="humanDateTime" name="humanDateTime" placeholder="yyyy-MM-ddTHH:mm:ss">
                                 <input type="submit">
                             </td></tr>
                         </table>
